@@ -20,13 +20,7 @@ app.use(cors({
     origin:["https://chat-app-f-three.vercel.app"],
     credentials: true,
 }))
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://chat-app-f-three.vercel.app");
-  res.header("Access-Control-Allow-Credentials", "true");
-  res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE");
-  
-  next();
-});
+
 
 app.use(express.json({
     limit: "20mb",
