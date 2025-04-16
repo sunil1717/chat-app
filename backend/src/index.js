@@ -27,7 +27,7 @@ app.use(express.urlencoded({
 app.use(cookieparser())
 app.use(cors({
     
-    origin:"http://localhost:5173",
+    origin:"https://chat-app-f-three.vercel.app",
     credentials: true,
 }))
 
